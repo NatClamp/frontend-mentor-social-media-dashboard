@@ -1,0 +1,43 @@
+// Widths
+$mobile: 375px;
+$tablet: 768px;
+$desktop: 1440px;
+
+// Colours
+
+// // Primary
+$lime: hsl(163, 72%, 41%);
+$red: hsl(356, 69%, 56%);
+$facebook: hsl(208, 92%, 53%);
+$twitter: hsl(203, 89%, 53%);
+$instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+$youTube: hsl(348, 97%, 39%);
+
+// // Dark Theme
+$dmToggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+
+// // Light Theme
+$LightToggle: hsl(230, 22%, 74%);
+
+// //  Neutral
+// // // Dark Theme
+
+$dmBGBottom: hsl(230, 17%, 14%);
+$dmBGTop: hsl(232, 19%, 15%);
+$dmCardBG: hsl(228, 28%, 20%);
+$dmBlueText: hsl(228, 34%, 66%);
+$dmWhiteText: hsl(0, 0%, 100%);
+
+// // // Light Theme
+
+$lmBGBottom: hsl(0, 0%, 100%);
+$lmBGTop: hsl(225, 100%, 98%);
+$lmCardBG: hsl(227, 47%, 96%);
+$lmBlueText: hsl(228, 12%, 44%);
+$lmDarkBlueText: hsl(230, 17%, 14%);
+
+// Typography
+$font: 'Inter', sans-serif;;
+$body-weight: 400;
+$bold-weight: 700;
+$body-size: 14px;
