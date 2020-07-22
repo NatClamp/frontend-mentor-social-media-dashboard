@@ -103,3 +103,44 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.bigCard {
+  margin: 1em 0;
+  padding: 1em;
+  background-color: var(--color-card-background);
+  border-radius: 5px;
+
+  &.facebook {
+    border-top: solid 4px $facebook;
+  }
+  &.twitter {
+    border-top: solid 4px $twitter;
+  }
+  &.instagram {
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-image-source: $instagram;
+    border-image-slice: 1;
+  }
+  &.youtube {
+    border-top: solid 4px $youtube;
+  }
+}
+
+@media (min-width: $tablet) {
+  .overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+  .bigCard {
+    width: calc(100vw/5);
+  }
+}

@@ -113,3 +113,35 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%; }
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center; }
+
+.bigCard {
+  margin: 1em 0;
+  padding: 1em;
+  background-color: var(--color-card-background);
+  border-radius: 5px; }
+  .bigCard.facebook {
+    border-top: solid 4px #198ff5; }
+  .bigCard.twitter {
+    border-top: solid 4px #1ca0f2; }
+  .bigCard.instagram {
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-image-source: linear-gradient(to right, #fdc468, #df4996);
+    border-image-slice: 1; }
+  .bigCard.youtube {
+    border-top: solid 4px #c4032a; }
+
+@media (min-width: 768px) {
+  .overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center; }
+  .bigCard {
+    width: calc(100vw/5); } }
