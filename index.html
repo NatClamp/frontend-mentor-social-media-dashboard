@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-light">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,174 +11,176 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="title">
-        <h1>Social Media Dashboard</h1>
-        <p>Total Followers: 23,004</p>
-      </div>
-      <div class="modeToggleContainer">
-        <div class="modeToggleContainer--inner">
-          <label class="toggle" for="darkModeToggle">
+    <div class="container">
+      <header>
+        <div class="title">
+          <h1>Social Media Dashboard</h1>
+          <p class="tagline">Total Followers: 23,004</p>
+        </div>
+        <div class="modeToggleContainer">
           Dark Mode
-            <input type="checkbox" name="darkModeToggle">
-            <span class="slider"></span>
+          <label class="switch">
+            <input type="checkbox" onchange="toggleTheme()">
+            <span class="slider round"></span>
           </label>
         </div>
-      </div>
-    </header>
-    <main>
-      <section class="overview">
-        <div class="facebook">
-          <div class="cardTop">
-            <img src="./images/icon-facebook.svg" alt="facebook logo">
-            <p class="handle">@nathanf</p>
-          </div>
-          <div class="cardMiddle">
-            <p class="stat">1987</p>
-            <p class="statName">Followers</p>
-          </div>
-          <div class="cardBottom">
-            <img src="./images/icon-up.svg" alt="up arrow">
-            <p class="statChange">12 Today</p>
-          </div>
-        </div>
-        <div class="twitter">
-          <div class="cardTop">
-            <img src="./images/icon-twitter.svg" alt="twitter logo">
-            <p class="handle">@nathanf</p>
-          </div>
-          <div class="cardMiddle">
-            <p class="stat">1044</p>
-            <p class="statName">Followers</p>
-          </div>
-          <div class="cardBottom">
-            <img src="./images/icon-up.svg" alt="up arrow">
-            <p class="statChange">99 Today</p>
-          </div>
-        </div>
-        <div class="instagram">
-          <div class="cardTop">
-            <img src="./images/icon-instagram.svg" alt="Instagram logo">
-            <p class="handle">@realnathanf</p>
-          </div>
-          <div class="cardMiddle">
-            <p class="stat">11k</p>
-            <p class="statName">Followers</p>
-          </div>
-          <div class="cardBottom">
-            <img src="./images/icon-up.svg" alt="up arrow">
-
-            <p class="statChange">1099 Today</p>
-          </div>
-        </div>
-        <div class="youtube">
-          <div class="cardTop">
-            <img src="./images/icon-youtube.svg" alt="Youtube logo">
-            <p class="handle">Nathan F.</p>
-          </div>
-          <div class="cardMiddle">
-            <p class="stat">8239</p>
-            <p class="statName">Subscribers</p>
-          </div>
-          <div class="cardBottom">
-            <img src="./images/icon-down.svg" alt="down arrow">
-            <p class="statChange">144 Today</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="today">
-        <div class="sectionHeader">
-          <h2>Overview - Today</h2>
-        </div>
-        <div class="todayCardsContainer">
-          <div class="smallCard">
-            <p class="smallCardTitle">Page Views</p>
-            <img src="./images/icon-facebook.svg" alt="facebook logo">
-            <p class="smallCardStat">87</p>
-            <div class="smallCardStatChange">
+      </header>
+      <main>
+        <section class="overview">
+          <div class="facebook">
+            <div class="cardTop">
+              <img src="./images/icon-facebook.svg" alt="facebook logo">
+              <p class="handle">@nathanf</p>
+            </div>
+            <div class="cardMiddle">
+              <p class="stat">1987</p>
+              <p class="statName">Followers</p>
+            </div>
+            <div class="cardBottom">
               <img src="./images/icon-up.svg" alt="up arrow">
-              <p class="statChange">3%</p>
+              <p class="statChange">12 Today</p>
             </div>
           </div>
+          <div class="twitter">
+            <div class="cardTop">
+              <img src="./images/icon-twitter.svg" alt="twitter logo">
+              <p class="handle">@nathanf</p>
+            </div>
+            <div class="cardMiddle">
+              <p class="stat">1044</p>
+              <p class="statName">Followers</p>
+            </div>
+            <div class="cardBottom">
+              <img src="./images/icon-up.svg" alt="up arrow">
+              <p class="statChange">99 Today</p>
+            </div>
+          </div>
+          <div class="instagram">
+            <div class="cardTop">
+              <img src="./images/icon-instagram.svg" alt="Instagram logo">
+              <p class="handle">@realnathanf</p>
+            </div>
+            <div class="cardMiddle">
+              <p class="stat">11k</p>
+              <p class="statName">Followers</p>
+            </div>
+            <div class="cardBottom">
+              <img src="./images/icon-up.svg" alt="up arrow">
 
-          <div class="smallCard">
-            <p class="smallCardTitle">Likes</p>
-            <img src="./images/icon-facebook.svg" alt="facebook logo">
-            <p class="smallCardStat">52</p>
-            <div class="smallCardStatChange">
+              <p class="statChange">1099 Today</p>
+            </div>
+          </div>
+          <div class="youtube">
+            <div class="cardTop">
+              <img src="./images/icon-youtube.svg" alt="Youtube logo">
+              <p class="handle">Nathan F.</p>
+            </div>
+            <div class="cardMiddle">
+              <p class="stat">8239</p>
+              <p class="statName">Subscribers</p>
+            </div>
+            <div class="cardBottom">
               <img src="./images/icon-down.svg" alt="down arrow">
-              <p class="statChange">2%</p>
+              <p class="statChange">144 Today</p>
             </div>
           </div>
+        </section>
 
-          <div class="smallCard">
-            <p class="smallCardTitle">Likes</p>
-            <img src="./images/icon-instagram.svg" alt="Instagram logo">
-            <p class="smallCardStat">5462</p>
-            <div class="smallCardStatChange">
-              <img src="./images/icon-up.svg" alt="up arrow">
-              <p class="statChange">2257%</p>
-            </div>
+        <section class="today">
+          <div class="sectionHeader">
+            <h2>Overview - Today</h2>
           </div>
-
-          <div class="smallCard">
-            <p class="smallCardTitle">Profile Views</p>
-            <img src="./images/icon-instagram.svg" alt="Instagram logo">
-            <p class="smallCardStat">52k</p>
-            <div class="smallCardStatChange">
-              <img src="./images/icon-up.svg" alt="up arrow">
-              <p class="statChange">1375%</p>
+          <div class="todayCardsContainer">
+            <div class="smallCard">
+              <p class="smallCardTitle">Page Views</p>
+              <img src="./images/icon-facebook.svg" alt="facebook logo">
+              <p class="smallCardStat">87</p>
+              <div class="smallCardStatChange">
+                <img src="./images/icon-up.svg" alt="up arrow">
+                <p class="statChange">3%</p>
+              </div>
             </div>
-          </div>
 
-          <div class="smallCard">
-            <p class="smallCardTitle">Retweets</p>
-            <img src="./images/icon-twitter.svg" alt="Twitter logo">
-            <p class="smallCardStat">117</p>
-            <div class="smallCardStatChange">
-              <img src="./images/icon-up.svg" alt="up arrow">
-              <p class="statChange">303%</p>
+            <div class="smallCard">
+              <p class="smallCardTitle">Likes</p>
+              <img src="./images/icon-facebook.svg" alt="facebook logo">
+              <p class="smallCardStat">52</p>
+              <div class="smallCardStatChange">
+                <img src="./images/icon-down.svg" alt="down arrow">
+                <p class="statChange">2%</p>
+              </div>
             </div>
-          </div>
 
-          <div class="smallCard">
-            <p class="smallCardTitle">Likes</p>
-            <img src="./images/icon-twitter.svg" alt="Twitter logo">
-            <p class="smallCardStat">507</p>
-            <div class="smallCardStatChange">
-              <img src="./images/icon-up.svg" alt="up arrow">
-              <p class="statChange">553%</p>
+            <div class="smallCard">
+              <p class="smallCardTitle">Likes</p>
+              <img src="./images/icon-instagram.svg" alt="Instagram logo">
+              <p class="smallCardStat">5462</p>
+              <div class="smallCardStatChange">
+                <img src="./images/icon-up.svg" alt="up arrow">
+                <p class="statChange">2257%</p>
+              </div>
             </div>
-          </div>
 
-          <div class="smallCard">
-            <p class="smallCardTitle">Likes</p>
-            <img src="./images/icon-youtube.svg" alt="Youtube logo">
-            <p class="smallCardStat">107</p>
-            <div class="smallCardStatChange">
-              <img src="./images/icon-down.svg" alt="down arrow">
-              <p class="statChange">19%</p>
+            <div class="smallCard">
+              <p class="smallCardTitle">Profile Views</p>
+              <img src="./images/icon-instagram.svg" alt="Instagram logo">
+              <p class="smallCardStat">52k</p>
+              <div class="smallCardStatChange">
+                <img src="./images/icon-up.svg" alt="up arrow">
+                <p class="statChange">1375%</p>
+              </div>
             </div>
-          </div>
 
-          <div class="smallCard">
-            <p class="smallCardTitle">Total Views</p>
-            <img src="./images/icon-youtube.svg" alt="Youtube logo">
-            <p class="smallCardStat">1407</p>
-            <div class="smallCardStatChange">
-              <img src="./images/icon-down.svg" alt="down arrow">
-              <p class="statChange">12%</p>
+            <div class="smallCard">
+              <p class="smallCardTitle">Retweets</p>
+              <img src="./images/icon-twitter.svg" alt="Twitter logo">
+              <p class="smallCardStat">117</p>
+              <div class="smallCardStatChange">
+                <img src="./images/icon-up.svg" alt="up arrow">
+                <p class="statChange">303%</p>
+              </div>
             </div>
+
+            <div class="smallCard">
+              <p class="smallCardTitle">Likes</p>
+              <img src="./images/icon-twitter.svg" alt="Twitter logo">
+              <p class="smallCardStat">507</p>
+              <div class="smallCardStatChange">
+                <img src="./images/icon-up.svg" alt="up arrow">
+                <p class="statChange">553%</p>
+              </div>
+            </div>
+
+            <div class="smallCard">
+              <p class="smallCardTitle">Likes</p>
+              <img src="./images/icon-youtube.svg" alt="Youtube logo">
+              <p class="smallCardStat">107</p>
+              <div class="smallCardStatChange">
+                <img src="./images/icon-down.svg" alt="down arrow">
+                <p class="statChange">19%</p>
+              </div>
+            </div>
+
+            <div class="smallCard">
+              <p class="smallCardTitle">Total Views</p>
+              <img src="./images/icon-youtube.svg" alt="Youtube logo">
+              <p class="smallCardStat">1407</p>
+              <div class="smallCardStatChange">
+                <img src="./images/icon-down.svg" alt="down arrow">
+                <p class="statChange">12%</p>
+              </div>
+            </div>
+
           </div>
+        </section>
+      </main>
 
-        </div>
-      </section>
-    </main>
-
-    <div class="attribution">
+      <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="www.natalieclamp.com">Nat Clamp</a>.
   </div>
+    </div>
+    <script src="script.js"></script>
+
   </body>
 </html>
